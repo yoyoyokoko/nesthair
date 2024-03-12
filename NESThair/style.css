@@ -1,0 +1,348 @@
+@charset "utf=8";
+
+/*=========================================
+     リセットcss
+     ======================================*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+ins {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #fff;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/*=========================================
+     レイアウト用
+     ======================================*/
+
+body {
+  background: url(backimage1_14.jpg);
+  border-top: 5px solid #345c39;
+  font-family: "メイリオ", meiryo;
+}
+
+div#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 7px rgba(83, 78, 61, 0.3);
+}
+
+/*=========================================
+     ヘッダー用
+     ======================================*/
+
+header {
+  width: 960px;
+  height: 49px;
+  padding: 20px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 12px;
+  color: "#555555";
+  background: url(NESThair-log-top_03.png) no-repeat;
+  padding-left: 51px;
+  line-height: 1;
+  height: 49px;
+  float: left;
+}
+
+header h1 span {
+  font-size: 33px;
+  color: #734339;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+  margin-top: 36px;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: 29px;
+}
+
+header nav ul li:hover {
+  background: url(NESThari-log1_07.png) no-repeat center bottom;
+  height: 36px;
+  display: inline-block;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #734339;
+  text-decoration: none;
+  height: 26px;
+  display: inline-block;
+}
+
+header nav ul li:hover a {
+  color: #345c39;
+  border-bottom: 4px solid #345c39;
+}
+
+div.clear {
+  clear: both;
+}
+
+header p#nav_tel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*=========================================
+     メイン画像用
+     ======================================*/
+
+div#mainimage {
+  width: 947px;
+  height: 290px;
+  margin: 20px 0 20px 0;
+  border: 5px solid #fff;
+}
+
+/*=========================================
+     サイド・レフト用
+     ======================================*/
+
+div#left {
+  width: 555px;
+  height: 178px;
+  background-color: #fff;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+div#left h2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #734339;
+  border-left: 5px solid #ba3009;
+  padding-left: 10px;
+}
+
+div#left ul {
+  overflow: scroll;
+  width: 555px;
+  height: 145px;
+}
+
+div#left ul li {
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  border-bottom: 1px dotted #d0d0d0;
+  line-height: 32px;
+}
+
+div#left ul li span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #b5b3b3;
+  margin-right: 15px;
+}
+
+/*=========================================
+     サイド・ライト用
+     ======================================*/
+
+div#right {
+  width: 365px;
+  height: 198px;
+  float: left;
+}
+
+div#right ul li {
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+div#right ul li a {
+  width: 225px;
+  height: 60px;
+  display: block;
+  font-size: 17px;
+  color: #734334;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 140px;
+}
+
+div#right ul li a#contact {
+  background: url(said-1-_14.jpg);
+}
+
+div#right ul li a#blog {
+  background: url(said-2_16.jpg);
+}
+
+div.clear {
+  clear: both;
+}
+
+/*=========================================
+     フッタ用
+     ======================================*/
+
+footer {
+  width: 100%;
+  height: 58px;
+  background-color: #345c39;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+}
